@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "CreateNewAssignment";
+    Layout = "~/Views/Shared/View1.cshtml";
+}
+
+
+
+<div class="f">
+    <h2 align="center">Create New Assignment</h2>
+
+<form action="/TeacherHome/saveNewAssignment" , method="post" , enctype="multipart/form-data">
+
+    &nbsp&nbsp&nbsp
+Assignment Title  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp<input type="text" , id="Title" , name="Title" ,class="search">
+<br/>
+    &nbsp&nbsp&nbsp
+Assignment Display Name <input type="text" , id="AssName" name="DisplayName" , class="search">
+<br/>
+    &nbsp&nbsp&nbsp
+Difficulty Level  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  <input type="text" , id="AssLevel" , name="DifficultyLevel" , class="search">
+<br/>
+    &nbsp&nbsp&nbsp
+Total Marks  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp<input type="number" , id="AssMarks" , name="Marks" , class="search">
+<br/>
+    &nbsp&nbsp&nbsp
+Format  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp<input type="text" , id="AssFormat" , name="Format" , class="search">
+<br/>
+    &nbsp&nbsp&nbsp
+Deadline  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp<input type="datetime" , id="AssDeadline" , name="Deadline" , class="search" , placeholder="MM/DD/YYYY HH:MM:SS">
+<br/>
+    &nbsp&nbsp&nbsp
+Upload File  &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp<input type="file" , id="AssFile" , name="ProblemLink" , class="search">
+<input type="submit" , value="Create" , class="btn">
+    </form>
+    </div>
